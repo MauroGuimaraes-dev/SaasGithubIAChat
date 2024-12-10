@@ -1,3 +1,8 @@
 streamlit
 embedchain
-python-dotenv 
+python-dotenv
+chromadb
+sentence-transformers
+unstructured
+pdf2image
+tabulate
