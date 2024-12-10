@@ -3,6 +3,10 @@ embedchain==0.0.68
 python-dotenv==1.0.0
 chromadb==0.4.22
 sentence-transformers==2.2.2
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
+onnxruntime==1.16.3
 unstructured
 pdf2image
 tabulate
