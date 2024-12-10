@@ -1,8 +1,8 @@
-streamlit
-embedchain
-python-dotenv
-chromadb
-sentence-transformers
+streamlit==1.31.1
+embedchain==0.0.68
+python-dotenv==1.0.0
+chromadb==0.4.22
+sentence-transformers==2.2.2
 unstructured
 pdf2image
 tabulate
