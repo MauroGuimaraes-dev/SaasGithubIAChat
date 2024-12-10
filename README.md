@@ -36,6 +36,53 @@ Siga os passos abaixo para configurar o projeto em sua máquina local:
      GITHUB_TOKEN=seu-token-do-github-aqui
      ```
 
+## 🚀 Estrutura do Projeto
+
+O projeto possui a seguinte estrutura de arquivos e diretórios:
+
+```bash
+.
+├── app.py              # Arquivo principal da aplicação
+├── requirements.txt    # Dependências do projeto
+├── runtime.txt        # Versão do Python para deploy
+├── packages.txt       # Dependências do sistema
+├── .env              # Variáveis de ambiente (não versionado)
+└── db/               # Banco de dados vetorial (não versionado)
+```
+
+### Detalhamento da pasta `db/`
+
+A pasta `db/` é um componente crucial do projeto, utilizada pelo ChromaDB (banco de dados vetorial) através do Embedchain. Sua função é:
+
+1. **Armazenamento de Embeddings**
+   - Guarda representações vetoriais do conteúdo dos repositórios
+   - Permite buscas semânticas rápidas e eficientes
+   - Mantém persistência dos dados processados
+
+2. **Estrutura Interna**
+```bash
+db/
+├── [ID-da-colecao]/
+│   ├── length.bin      # Tamanho dos vetores
+│   ├── data.bin        # Dados vetorizados
+│   ├── metadata.json   # Metadados dos documentos
+│   └── index/          # Índices para busca rápida
+```
+
+3. **Funcionamento**
+   - Quando um repositório é registrado, seu conteúdo é processado
+   - O texto é dividido em chunks menores
+   - Cada chunk é convertido em vetor usando modelos de embeddings
+   - Os vetores são armazenados para consultas futuras
+
+4. **Importância**
+   - Permite respostas contextualizadas às perguntas
+   - Evita reprocessamento do mesmo conteúdo
+   - Otimiza a performance das consultas
+
+> **Nota**: A pasta `db/` é automaticamente gerada e não deve ser versionada, pois contém dados específicos de cada ambiente e pode ser regenerada quando necessário.
+```
+
 ## 🚀 Como Executar
 
 Para iniciar o aplicativo, execute o seguinte comando: 
