@@ -1,0 +1,87 @@
+# Arquivos de ambiente
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Diretórios de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+
+# Arquivos de log
+*.log
+logs/
+log/
+
+# Arquivos de banco de dados
+*.db
+*.sqlite3
+
+# Arquivos temporários
+*.bak
+*.tmp
+*~
+.DS_Store
+
+# Arquivos de cobertura de teste
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Arquivos de documentação
+docs/_build/
+doc/_build/
+
+# Arquivos de distribuição
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Arquivos de ambiente local
+.env.local
+.env.*.local
+
+# Arquivos de cache
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/ 
