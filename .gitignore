@@ -86,3 +86,8 @@ build/
 dmypy.json
 .pyre/ db/
 db/
+
+# Chromadb files
+db/
+*.bin
+chroma/
